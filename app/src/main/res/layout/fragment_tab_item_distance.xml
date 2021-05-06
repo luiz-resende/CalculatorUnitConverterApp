@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_tabItem_DIST"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".ui.units.TabItem_Distance"
+    tools:ignore="UselessParent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_tab_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.units.TabItem_Distance">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row1_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <Spinner
+                android:id="@+id/spinner_tabItem_distance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/input_distance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/units_distance_defaultText_input"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row1_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row2_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_picometre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_picometre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_picometre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row2_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row3_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_nanometre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_nanometre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_nanometre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row3_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row3">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row4_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_micrometre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_micrometre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_micrometre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row4_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row4">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row5_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_millimetre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_millimetre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_millimetre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row5_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row5">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row6_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_centimetre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_centimetre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_centimetre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row6_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row6">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row7_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_metre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_metre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_metre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row7_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row7">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row8_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_kilometre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_kilometre"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_kilometre_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row8_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row8">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row9_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_thou"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_thou"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_thou_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row9_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row9">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row10_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_barleycorn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_barleycorn"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_barleycorn_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row10_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row10">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row11_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_inch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_inch"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_inch_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row11_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row11">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row12_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_foot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_foot"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_foot_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row12_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row12">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row13_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_yard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_yard"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_yard_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row13_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row13">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row14_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_chain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_chain"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_chain_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row14_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row14">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row15_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_furlong"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_furlong"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_furlong_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row15_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row15">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row16_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_mile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_mile"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,TooManyViews" />
+
+            <TextView
+                android:id="@+id/distance_mile_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row16_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row16">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row17_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_league"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_league"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_league_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row17_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row17">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row18_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_fathom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_fathom"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_fathom_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row18_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row18">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row19_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_nautical_mile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_nautical_mile"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_nautical_mile_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row19_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row19">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row20_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_light_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_light_year"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_light_year_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row20_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_distance_row21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_distance_row20">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row21_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/distance_parsec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_distance_parsec"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/distance_parsec_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_distance_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_distance_row21_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

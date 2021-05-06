@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_tabItem_SPEE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".ui.units.TabItem_Speed"
+    tools:ignore="UselessParent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_tab_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.units.TabItem_Speed">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row1_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <Spinner
+                android:id="@+id/spinner_tabItem_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/input_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/units_speed_defaultText_input"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row1_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row2_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_centimetre_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row2_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row3_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_centimetre_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row3_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row3">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row4_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_centimetre_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_centimetre_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row4_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row4">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row5_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_metre_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_metre_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_metre_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row5_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row5">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row6_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_metre_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_metre_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_metre_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row6_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row6">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row7_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_metre_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_metre_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_metre_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row7_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row7">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row8_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_kilometre_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row8_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row8">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row9_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_kilometre_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row9_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row9">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row10_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_kilometre_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_kilometre_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row10_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row10">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row11_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_foot_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_foot_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_foot_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row11_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row11">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row12_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_foot_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_foot_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_foot_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row12_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row12">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row13_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_foot_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_foot_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_foot_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row13_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row13">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row14_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_mile_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_mile_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_mile_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row14_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row14">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row15_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_mile_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_mile_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_mile_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row15_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row15">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row16_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_mile_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_mile_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,TooManyViews" />
+
+            <TextView
+                android:id="@+id/speed_mile_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row16_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row16">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row17_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_mach_SI"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_mach_SI"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_mach_SI_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row17_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row17">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row18_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_mach_1atm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_mach_1atm"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_mach_1atm_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row18_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_speed_row19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_speed_row18">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row19_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/speed_knot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.49"
+                android:gravity="center|left"
+                android:text="@string/units_speed_knot"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/speed_knot_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36"
+                android:gravity="center|left"
+                android:text="@string/units_speed_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_speed_row19_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

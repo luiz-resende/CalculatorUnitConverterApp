@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_tabItem_TIME"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".ui.units.TabItem_Time"
+    tools:ignore="UselessParent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_tab_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.units.TabItem_Time">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row1_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <Spinner
+                android:id="@+id/spinner_tabItem_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/input_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/units_time_defaultText_input"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row1_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row2_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_nanosecond"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_nanosecond"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_nanosecond_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row2_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row3_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_millisecond"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_millisecond"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_millisecond_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row3_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row3">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row4_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_second"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_second_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row4_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row4">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row5_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_minute"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_minute_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row5_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row5">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row6_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_hour"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_hour_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row6_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row6">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row7_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_day"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_day_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row7_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row7">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row8_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_week"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_week_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row8_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row8">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row9_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_month"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_month_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row9_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row9">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row10_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_year"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_year_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row10_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row10">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row11_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_decade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_decade"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_decade_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row11_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_time_row12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_time_row11">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row12_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/time_eon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_time_eon"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/time_eon_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_time_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_time_row12_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_currency_converter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.currency.CurrencyFragment"
+    tools:ignore="UselessParent">
+
+    <ScrollView
+        android:id="@+id/scrollView_layout_currency_converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.currency.CurrencyFragment"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_currency_converter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.currency.CurrencyFragment">
+
+            <ListView
+                android:id="@+id/list_view_layout_currency_converter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                tools:ignore="NestedScrolling" />
+
+            <TextView
+                android:id="@+id/image_layout_currency_row_00"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/list_view_layout_currency_converter"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="36sp"
+                android:background="@drawable/ic_menu_currency"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_currency_row_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_layout_currency_row_00"
+                android:layout_marginTop="24sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_01_padding1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+                <EditText
+                    android:id="@+id/currency_converter_input_text_value"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center|right"
+                    android:hint="100"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints,RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_01_padding2"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/currency_from_text_view_value"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:gravity="center"
+                    android:text="@string/currency_from_value"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_01_padding3"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_currency_row_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_currency_row_01"
+                android:layout_marginTop="12sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_02_padding1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/currency_from_text_view_country"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="@string/currency_from_country"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_02_padding2"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:orientation="horizontal" />
+
+                <Spinner
+                    android:id="@+id/currency_converter_spinner_from_currency"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.60"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    tools:ignore="Autofill,LabelFor,MissingConstraints,RtlCompat" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_02_padding3"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_currency_row_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_currency_row_02"
+                android:layout_marginTop="36sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row03_padding1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.44"
+                    android:orientation="horizontal" />
+
+                <ImageButton
+                    android:id="@+id/currency_converter_change_button"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:background="@drawable/ic_currency_button"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:src="@drawable/ic_currency_arrows"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row03_padding3"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.44"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_currency_row_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_currency_row_03"
+                android:layout_marginTop="36sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_04_padding1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/currency_to_text_view_country"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="@string/currency_to_country"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_04_padding2"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:orientation="horizontal" />
+
+                <Spinner
+                    android:id="@+id/currency_converter_spinner_to_currency"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.60"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    tools:ignore="Autofill,LabelFor,MissingConstraints,RtlCompat" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_04_padding3"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_currency_row_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_currency_row_04"
+                android:layout_marginTop="12sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_05_padding1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+                <EditText
+                    android:id="@+id/currency_converter_output_text_value"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center|right"
+                    android:hint="@string/currency_to_value_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill,LabelFor,MissingConstraints,RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_05_padding2"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/currency_to_text_view_value"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:gravity="center"
+                    android:text="@string/currency_to_value"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_currency_row_05_padding3"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/currency_update_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_below="@+id/constraint_layout_currency_converter"
+        android:background="@color/light_grey"
+        android:gravity="center|left"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

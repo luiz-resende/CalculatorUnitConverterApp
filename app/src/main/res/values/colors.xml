@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DEFAULT COLORS SET UPON APP CREATION -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- COLORS USED THROUGHOUT THE APP THEME -->
+    <color name="custom_dk_green">#FF4A805E</color>
+    <color name="custom_dk_green_heavy">#FF406E51</color>
+    <color name="custom_dk_green_light">#FF68B183</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dk_grey">#FF717171</color>
+    <color name="light_grey">#AEAEAE</color>
+    <color name="lighter_grey">#F6F6F6</color>
+    <color name="side_nav_bar_center">#FF009688</color>
+    <color name="side_nav_bar_start">#FF4DB6AC</color>
+    <color name="side_nav_bar_end">#FF00695C</color>
+    <color name="custom_tomato">#FFBA4C47</color>
+    <color name="custom_tomato_2">#DF655F</color>
+    <color name="custom_tomato_3">#DF281A</color>
+    <color name="stroke_color_vectors">#00000000</color>
+    <!-- Set of colors used specifically on the calculator -->
+    <color name="calculator_number_btns">#AAC5B4</color>
+    <color name="calculator_number_btns_selected">#BFDFCB</color>
+    <color name="calculator_operation_btns">#7F9C82</color>
+    <color name="calculator_btn_clr">#C1726E</color>
+    <color name="calculator_btn_equal">#5DA377</color>
+    <color name="calculator_hidden_back">#8CDCA9</color>
+    <color name="calculator_hidden_btns">#8AD5A5</color>
+
+    <color name="selecte">#f1c40f</color>
+    <color name="btn_cl">#e67e22</color>
+    <color name="operator_btn_cl">#3498db</color>
+    <color name="gree">#2ecc71</color>
+
+</resources>

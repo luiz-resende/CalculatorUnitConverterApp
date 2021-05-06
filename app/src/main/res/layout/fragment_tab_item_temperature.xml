@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_tabItem_TEMP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".ui.units.TabItem_Temperature"
+    tools:ignore="UselessParent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_tab_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.units.TabItem_Temperature">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row1_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <Spinner
+                android:id="@+id/spinner_tabItem_temperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/input_temperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/units_temperature_defaultText_input"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row1_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row2_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_celsius"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_celsius"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_celsius_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row2_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row3_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_fahrenheit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_fahrenheit"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_fahrenheit_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row3_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row3">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row4_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_kelvin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_kelvin"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_kelvin_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row4_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row4">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row5_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_rankine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_rankine"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_rankine_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row5_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row5">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row6_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_delisle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_delisle"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_delisle_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row6_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row6">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row7_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_newton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_newton"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_newton_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row7_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row7">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row8_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_reamur"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_reaumur"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_reamur_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row8_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tab_temperature_row9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_tab_temperature_row8">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row9_padding1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/temperature_romer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_romer"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/temperature_romer_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center|left"
+                android:text="@string/units_temperature_defaultText"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_tab_temperature_row9_padding2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

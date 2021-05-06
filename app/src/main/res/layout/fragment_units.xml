@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.units.UnitConversionFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_dk_green_light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabMode="scrollable"
+        app:tabInlineLabel="true">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_AREA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_AREA"
+            android:icon="@drawable/ic_tab_units_area" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_DIST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_DIST"
+            android:icon="@drawable/ic_tab_units_distance"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_MASS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_MASS"
+            android:icon="@drawable/ic_tab_units_weight" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_PRES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_PRES"
+            android:icon="@drawable/ic_tab_units_pressure"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_SPEE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_SPEE"
+            android:icon="@drawable/ic_tab_units_speed"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_TEMP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_TEMP"
+            android:icon="@drawable/ic_tab_units_temperature"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_TIME"
+            android:icon="@drawable/ic_tab_units_time"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_unit_VOLU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_tab_VOLU"
+            android:icon="@drawable/ic_tab_units_volume" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_units"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

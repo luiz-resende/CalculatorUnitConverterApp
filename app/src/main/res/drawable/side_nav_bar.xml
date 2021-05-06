@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="135"
+        android:centerColor="@color/custom_dk_green"
+        android:startColor="@color/custom_dk_green_light"
+        android:endColor="@color/custom_dk_green_heavy"
+        android:type="linear" />
+        <!--android:centerColor="@color/side_nav_bar_center"
+        android:startColor="@color/side_nav_bar_start"
+        android:endColor="@color/side_nav_bar_end" -->
+
+</shape>

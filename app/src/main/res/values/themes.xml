@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/custom_dk_green</item>
+        <item name="colorPrimaryVariant">@color/custom_dk_green_heavy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/custom_dk_green_light</item>
+        <item name="colorSecondaryVariant">@color/custom_dk_green_heavy</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/custom_tomato</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/custom_dk_green</item>
+        <item name="colorPrimaryDark">@color/custom_dk_green_heavy</item>
+        <item name="colorAccent">@color/custom_tomato</item>
+    </style>
+
+    <style name="CalculatorNumberButtons" parent="android:style/Widget.Button">
+        <item name="android:background">@color/calculator_number_btns</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="CalculatorOperationButtons" parent="android:style/Widget.Button">
+        <item name="android:background">@color/calculator_operation_btns</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="CalculatorActionButtons" parent="android:style/Widget.Button">
+        <item name="android:background">@color/calculator_btn_clr</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+</resources>

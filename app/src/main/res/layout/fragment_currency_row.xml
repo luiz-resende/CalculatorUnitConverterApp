@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currency_converter_custom_layout_new_row"
+    android:layout_width="match_parent"
+    android:layout_height="72sp"
+    android:gravity="center"
+    android:paddingTop="5sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:paddingBottom="5sp"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/currency_converter_custom_layout_linear_001_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:paddingTop="2.5sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="12.5sp"
+        android:paddingBottom="2.5sp"
+        android:orientation="horizontal"
+        tools:ignore="NestedWeights" >
+
+        <ImageView
+            android:id="@+id/currency_converter_custom_layout_image_flag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ic_currency_flags_zzzz"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/currency_converter_custom_layout_linear_002_texts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:orientation="vertical"
+        tools:ignore="NestedWeights" >
+
+        <View
+            android:id="@+id/currency_converter_custom_layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.014"
+            android:paddingTop="2.5sp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/currency_converter_custom_layout_linear_01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.493"
+            android:paddingTop="5sp"
+            android:paddingLeft="5sp"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights" >
+
+            <TextView
+                android:id="@+id/currency_converter_custom_layout_text_country_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.70"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text="@string/currency_default_text_country_name"
+                android:textSize="16sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/currency_converter_custom_layout_text_converted_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/currency_default_text_converted_value"
+                android:textSize="16sp"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/currency_converter_custom_layout_linear_02"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.493"
+            android:layout_gravity="center"
+            android:paddingTop="1sp"
+            android:paddingLeft="5sp"
+            android:paddingBottom="5sp"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights" >
+
+            <TextView
+                android:id="@+id/currency_converter_custom_layout_text_03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text="@string/currency_default_text_currency_conversion"
+                android:textSize="14sp"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

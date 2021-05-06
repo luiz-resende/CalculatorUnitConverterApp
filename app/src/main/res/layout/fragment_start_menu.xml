@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_start_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".MenuStartOptionsFragment"
+    tools:ignore="UselessParent"-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_menu_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    tools:context=".MenuStartOptionsFragment">
+
+    <Button
+        android:id="@+id/start_menu_calculator_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_menu_calculator_48dp"
+        android:gravity="center"
+        android:text="@string/menu_calculator"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_menu_currency_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_menu_currency_48dp"
+        android:gravity="center"
+        android:text="@string/menu_currency"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_menu_calculator_btn" />
+
+    <Button
+        android:id="@+id/start_menu_dilution_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/ic_menu_dilution_48dp"
+        android:gravity="center"
+        android:text="@string/menu_dilution"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_menu_currency_btn" />
+
+    <Button
+        android:id="@+id/start_menu_units_converter_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:drawableTop="@drawable/ic_menu_units_48dp"
+        android:gravity="center"
+        android:text="@string/menu_units"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_menu_dilution_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--/ScrollView-->

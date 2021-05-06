@@ -1,0 +1,646 @@
+<resources>
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED TO DEFINE GENERAL NAMES AT THE APPLICATION -->
+    <!-- ################################################################################################################ -->
+    <string name="app_name">Calculator &amp; Unit Converter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Calculator &amp; Converter</string>
+    <string name="nav_header_subtitle">NO SUBTITLE</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED TO DEFINE TABS ON MENU DRAWER -->
+    <!-- ################################################################################################################ -->
+    <string name="menu_units">Unit Converter</string>
+    <string name="menu_currency">Currency Converter</string>
+    <string name="menu_calculator">Calculator</string>
+    <string name="menu_dilution">Dilution Calculator</string>
+    <string name="menu_start">Converter Application</string>
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED AT THE CALCULATOR MENU DRAWER -->
+    <!-- ################################################################################################################ -->
+    <string name="calculator_button_000">0</string>
+    <string name="calculator_button_001">1</string>
+    <string name="calculator_button_002">2</string>
+    <string name="calculator_button_003">3</string>
+    <string name="calculator_button_004">4</string>
+    <string name="calculator_button_005">5</string>
+    <string name="calculator_button_006">6</string>
+    <string name="calculator_button_007">7</string>
+    <string name="calculator_button_008">8</string>
+    <string name="calculator_button_009">9</string>
+    <string name="calculator_button_dot">∙</string>
+    <string name="calculator_button_op_delete">DEL</string>
+    <string name="calculator_button_op_delete_clear">C</string>
+    <string name="calculator_button_op_equal">=</string>
+    <string name="calculator_button_op_add">+</string>
+    <string name="calculator_button_op_subtract">\u2212</string>
+    <string name="calculator_button_op_divide">\u00f7</string>
+    <string name="calculator_button_op_multiply">\u00d7</string>
+    <string name="calculator_button_op_inverse">INV</string>
+    <string name="calculator_button_op_degrees">DEG</string>
+    <string name="calculator_button_op_radians">RAD</string>
+    <string name="calculator_button_op_reminder">%</string>
+    <string name="calculator_button_op_reminder_inverse">mod</string>v
+    <string name="calculator_button_op_sine">sin</string>
+    <string name="calculator_button_op_sine_inverse">sin&#x207B;&#x00B9;</string>
+    <string name="calculator_button_op_cosine">cos</string>
+    <string name="calculator_button_op_cosine_inverse">cos&#x207B;&#x00B9;</string>
+    <string name="calculator_button_op_tangent">tan</string>
+    <string name="calculator_button_op_tangent_inverse">tan&#x207B;&#x00B9;</string>
+    <string name="calculator_button_op_naturalLog">ln</string>
+    <string name="calculator_button_op_naturalLog_inverse">e&lt;sup&gt;&lt;small&gt;x&lt;/small&gt;&lt;/sup&gt;</string>
+    <string name="calculator_button_op_logarithm">log</string>
+    <string name="calculator_button_op_logarithm_inverse">10&lt;sup&gt;&lt;small&gt;x&lt;/small&gt;&lt;/sup&gt;</string>
+    <string name="calculator_button_op_sqrt">&#8730;</string>
+    <string name="calculator_button_op_sqrt_inverse">x&#x00B2;</string>
+    <string name="calculator_button_op_pi">π</string>
+    <string name="calculator_button_op_phi">φ</string>
+    <string name="calculator_button_op_euler">e</string>
+    <string name="calculator_button_op_exponential">^</string>
+    <string name="calculator_button_op_exponential_2">x&lt;sup&gt;&lt;small&gt;y&lt;/small&gt;&lt;/sup&gt;</string>
+    <string name="calculator_button_op_openBrackets">(</string>
+    <string name="calculator_button_op_closeBrackets">)</string>
+    <string name="calculator_button_op_factorial">!</string>
+    <string name="calculator_button_op_enter">\u2193</string>
+    <string name="calculator_button_hide_panel">&gt;</string>
+    <string name="calculator_button_show_panel">&lt;</string>
+    <string name="calculator_clear_history">Clear history</string>
+    <string name="calculator_error_message_arcSine_arcCosine_op_domain">Domain error!</string>
+    <string name="calculator_error_message_generic">Error!</string>
+    <string name="calculator_error_message_logarithm_domain">Domain error!</string>
+    <string name="calculator_error_message_factorial_domain">Operand not integer!</string>
+    <string name="calculator_error_message_mismatch_expression">Bad expression!</string>
+    <string name="calculator_error_message_unknown_operator">Unknown operator in expression!</string>
+    <string name="calculator_error_message_zero_division">Can\'t divide by 0!</string>
+    <string name="calculator_error_message_expression_exception_1">Cannot be 0!</string>
+    <string name="calculator_error_message_expression_exception_domain">Domain error!</string>
+    <string-array name="calculator_number_buttons_array">
+        <item>@string/calculator_button_000</item>
+        <item>@string/calculator_button_001</item>
+        <item>@string/calculator_button_002</item>
+        <item>@string/calculator_button_003</item>
+        <item>@string/calculator_button_004</item>
+        <item>@string/calculator_button_005</item>
+        <item>@string/calculator_button_006</item>
+        <item>@string/calculator_button_007</item>
+        <item>@string/calculator_button_008</item>
+        <item>@string/calculator_button_009</item>
+    </string-array>
+    <string-array name="calculator_operator_buttons_array">
+        <item>@string/calculator_button_dot</item>
+        <item>@string/calculator_button_op_add</item>
+        <item>@string/calculator_button_op_subtract</item>
+        <item>@string/calculator_button_op_divide</item>
+        <item>@string/calculator_button_op_multiply</item>
+    </string-array>
+    <string-array name="calculator_operator_buttons_hidden_array">
+        <item>@string/calculator_button_op_reminder</item>
+        <item>@string/calculator_button_op_reminder_inverse</item>
+        <item>@string/calculator_button_op_sine</item>
+        <item>@string/calculator_button_op_sine_inverse</item>
+        <item>@string/calculator_button_op_cosine</item>
+        <item>@string/calculator_button_op_cosine_inverse</item>
+        <item>@string/calculator_button_op_tangent</item>
+        <item>@string/calculator_button_op_tangent_inverse</item>
+        <item>@string/calculator_button_op_naturalLog</item>
+        <item>@string/calculator_button_op_naturalLog_inverse</item>
+        <item>@string/calculator_button_op_logarithm</item>
+        <item>@string/calculator_button_op_logarithm_inverse</item>
+        <item>@string/calculator_button_op_sqrt</item>
+        <item>@string/calculator_button_op_sqrt_inverse</item>
+        <item>@string/calculator_button_op_exponential</item>
+        <item>@string/calculator_button_op_openBrackets</item>
+        <item>@string/calculator_button_op_closeBrackets</item>
+        <item>@string/calculator_button_op_factorial</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED AT THE CURRENCY CONVERTER MENU DRAWER -->
+    <!-- ################################################################################################################ -->
+    <string name="currency_update_date_message">Updated:&#160;</string>
+    <string name="currency_update_time_message">&#160;at&#160;</string>
+    <string name="currency_default_text_country_name">Country</string>
+    <string name="currency_default_text_currency_conversion">1.0 ABC = 1.0 CBA</string>
+    <string name="currency_default_text_converted_value">$1.00</string>
+    <string name="currency_default_file_name">loaded_currencies</string>
+    <string name="currency_from_country">From:&#160;</string>
+    <string name="currency_from_value">SYM</string>
+    <string name="currency_to_country">To:&#160;</string>
+    <string name="currency_to_value">SYM</string>
+    <string name="currency_to_value_hint">$ CONVERTED</string>
+
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED AT THE DILUTION CALCULATOR MENU DRAWER -->
+    <!-- ################################################################################################################ -->
+    <string name="dilution_calculate_button">CALCULATE</string>
+    <string name="dilution_concen_initial">Initial concentration (% v/v)</string>
+    <string name="dilution_concen_initial_hint">99.0</string>
+    <string name="dilution_concen_target">Target concentration (% v/v)</string>
+    <string name="dilution_concen_target_hint">75.0</string>
+    <string name="dilution_erase_button">CLEAR</string>
+    <string name="dilution_switch_button_volume_text">Use final volume?</string>
+    <string name="dilution_switch_button_solvent_text_1">Solvent</string>
+    <string name="dilution_switch_button_solvent_text_2">Ingredient</string>
+    <string name="dilution_vol_initial">Initial Volume (mL)</string>
+    <string name="dilution_vol_initial_switch_true">Final Volume (mL)</string>
+    <string name="dilution_vol_initial_hint">500</string>
+    <string name="dilution_vol_result">Dilution volume (mL)</string>
+    <string name="dilution_vol_total">Total final volume (mL)</string>
+    <string name="dilution_vol_result_switch_true">Initial solution volume (mL)</string>
+    <string name="dilution_vol_total_switch_true">Volume of solvent to add (mL)</string>
+    <string name="dilution_vol_display_result_switch_false_1">Add</string>
+    <string name="dilution_vol_display_result_switch_false_2">mL of solvent</string>
+    <string name="dilution_vol_display_result_switch_false_5">mL of ingredient</string>
+    <string name="dilution_vol_display_result_switch_false_3">Total volume:</string>
+    <string name="dilution_vol_display_result_switch_false_4">mL</string>
+    <string name="dilution_vol_display_result_space">&#032;</string>
+    <string name="dilution_vol_display_result_switch_true_1">Initial volume:</string>
+    <string name="dilution_vol_display_result_switch_true_2">mL</string>
+    <string name="dilution_vol_display_result_switch_true_3">Add</string>
+    <string name="dilution_vol_display_result_switch_true_4">mL of solvent</string>
+    <string name="dilution_vol_display_result_switch_true_5">mL of ingredient</string>
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED AT THE UNITS CONVERTER MENU DRAWER -->
+    <!-- ################################################################################################################ -->
+    <string name="units_tab_AREA">Area</string>
+    <string name="units_tab_DIST">Distance/Length</string>
+    <string name="units_tab_MASS">Mass/Weight</string>
+    <string name="units_tab_PRES">Pressure</string>
+    <string name="units_tab_SPEE">Speed</string>
+    <string name="units_tab_TEMP">Temperature</string>
+    <string name="units_tab_TIME">Time</string>
+    <string name="units_tab_VOLU">Volume</string>
+    <string-array name="units_tabs_names">
+        <item>@string/units_tab_AREA</item>
+        <item>@string/units_tab_DIST</item>
+        <item>@string/units_tab_MASS</item>
+        <item>@string/units_tab_PRES</item>
+        <item>@string/units_tab_SPEE</item>
+        <item>@string/units_tab_TEMP</item>
+        <item>@string/units_tab_TIME</item>
+        <item>@string/units_tab_VOLU</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Area tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_area_select">- Select -</string>
+    <string name="units_area_sq_millimetre">Squared Millimeter (mm²)</string>
+    <string name="units_area_sq_centimetre">Squared Centimeter (cm²)</string>
+    <string name="units_area_sq_metre">Squared Meter (m²)</string>
+    <string name="units_area_sq_kilometre">Squared Kilometer (km²)</string>
+    <string name="units_area_sq_inch">Squared Inch (in²)</string>
+    <string name="units_area_sq_foot">Squared Foot (ft²)</string>
+    <string name="units_area_sq_yard">Squared Yard (yd²)</string>
+    <string name="units_area_sq_mile">Squared Mile (mi²)</string>
+    <string name="units_area_hectare">Hectare (ha)</string>
+    <string name="units_area_acre">Acre (ac)</string>
+    <string name="units_area_defaultText">-</string>
+    <string name="units_area_defaultText_input">Area</string>
+    <string-array name="array_area_scales">
+        <item>@string/units_area_select</item>
+        <item>@string/units_area_sq_millimetre</item>
+        <item>@string/units_area_sq_centimetre</item>
+        <item>@string/units_area_sq_metre</item>
+        <item>@string/units_area_sq_kilometre</item>
+        <item>@string/units_area_hectare</item>
+        <item>@string/units_area_sq_inch</item>
+        <item>@string/units_area_sq_foot</item>
+        <item>@string/units_area_sq_yard</item>
+        <item>@string/units_area_sq_mile</item>
+        <item>@string/units_area_acre</item>
+    </string-array>
+    <string-array name="array_area_scales_conditionals">
+        <item>@string/units_area_sq_millimetre</item>
+        <item>@string/units_area_sq_centimetre</item>
+        <item>@string/units_area_sq_metre</item>
+        <item>@string/units_area_sq_kilometre</item>
+        <item>@string/units_area_hectare</item>
+        <item>@string/units_area_sq_inch</item>
+        <item>@string/units_area_sq_foot</item>
+        <item>@string/units_area_sq_yard</item>
+        <item>@string/units_area_sq_mile</item>
+        <item>@string/units_area_acre</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Distance/Length tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_distance_select">- Select -</string>
+    <string name="units_distance_picometre">Picometer (pm)</string>
+    <string name="units_distance_nanometre">Nanometer (nm)</string>
+    <string name="units_distance_micrometre">Micrometer (μm)</string>
+    <string name="units_distance_millimetre">Millimeter (mm)</string>
+    <string name="units_distance_centimetre">Centimeter (cm)</string>
+    <string name="units_distance_metre">Meter (m)</string>
+    <string name="units_distance_kilometre">Kilometer (km)</string>
+    <string name="units_distance_thou">Thou (th)</string>
+    <string name="units_distance_barleycorn">Barleycorn</string>
+    <string name="units_distance_inch">Inch (in)</string>
+    <string name="units_distance_foot">Feet (ft)</string>
+    <string name="units_distance_yard">Yard (yd)</string>
+    <string name="units_distance_chain">Chain (ch)</string>
+    <string name="units_distance_furlong">Furlong (fur)</string>
+    <string name="units_distance_mile">Mile (mi)</string>
+    <string name="units_distance_league">League (lea)</string>
+    <string name="units_distance_fathom">Fathom (ftm)</string>
+    <string name="units_distance_nautical_mile">Nautical Mile</string>
+    <string name="units_distance_light_year">Light Year (ly)</string>
+    <string name="units_distance_parsec">Parsec (pc)</string>
+    <string name="units_distance_defaultText">-</string>
+    <string name="units_distance_defaultText_input">Length</string>
+    <string-array name="array_distance_scales">
+        <item>@string/units_distance_select</item>
+        <item>@string/units_distance_picometre</item>
+        <item>@string/units_distance_nanometre</item>
+        <item>@string/units_distance_micrometre</item>
+        <item>@string/units_distance_millimetre</item>
+        <item>@string/units_distance_centimetre</item>
+        <item>@string/units_distance_metre</item>
+        <item>@string/units_distance_kilometre</item>
+        <item>@string/units_distance_thou</item>
+        <item>@string/units_distance_barleycorn</item>>
+        <item>@string/units_distance_inch</item>
+        <item>@string/units_distance_foot</item>
+        <item>@string/units_distance_yard</item>
+        <item>@string/units_distance_chain</item>
+        <item>@string/units_distance_furlong</item>
+        <item>@string/units_distance_mile</item>
+        <item>@string/units_distance_league</item>
+        <item>@string/units_distance_fathom</item>
+        <item>@string/units_distance_nautical_mile</item>
+        <item>@string/units_distance_light_year</item>
+        <item>@string/units_distance_parsec</item>
+    </string-array>
+    <string-array name="array_distance_scales_conditionals">
+        <item>@string/units_distance_picometre</item>
+        <item>@string/units_distance_nanometre</item>
+        <item>@string/units_distance_micrometre</item>
+        <item>@string/units_distance_millimetre</item>
+        <item>@string/units_distance_centimetre</item>
+        <item>@string/units_distance_metre</item>
+        <item>@string/units_distance_kilometre</item>
+        <item>@string/units_distance_thou</item>
+        <item>@string/units_distance_barleycorn</item>
+        <item>@string/units_distance_inch</item>
+        <item>@string/units_distance_foot</item>
+        <item>@string/units_distance_yard</item>
+        <item>@string/units_distance_chain</item>
+        <item>@string/units_distance_furlong</item>
+        <item>@string/units_distance_mile</item>
+        <item>@string/units_distance_league</item>
+        <item>@string/units_distance_fathom</item>
+        <item>@string/units_distance_nautical_mile</item>
+        <item>@string/units_distance_light_year</item>
+        <item>@string/units_distance_parsec</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Mass tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_mass_select">- Select -</string>
+    <string name="units_mass_milligram">Milligram (mg)</string>
+    <string name="units_mass_gram">Gram (g)</string>
+    <string name="units_mass_kilogram">Kilogram (kg)</string>
+    <string name="units_mass_carat">Carat (ct)</string>
+    <string name="units_mass_grain">Grain (gr)</string>
+    <string name="units_mass_ounce">Ounce (oz)</string>
+    <string name="units_mass_ounce_troy">Troy Ounce (t oz)</string>
+    <string name="units_mass_pound">Pound (lbs)</string>
+    <string name="units_mass_ton_si">Ton (metric)</string>
+    <string name="units_mass_ton_us">Ton (US/Short)</string>
+    <string name="units_mass_ton_uk">Ton (UK/Long)</string>
+    <string name="units_mass_defaultText">-</string>
+    <string name="units_mass_defaultText_input">Mass</string>
+    <string-array name="array_mass_scales">
+        <item>@string/units_mass_select</item>
+        <item>@string/units_mass_milligram</item>
+        <item>@string/units_mass_gram</item>
+        <item>@string/units_mass_kilogram</item>
+        <item>@string/units_mass_carat</item>
+        <item>@string/units_mass_grain</item>
+        <item>@string/units_mass_ounce</item>
+        <item>@string/units_mass_ounce_troy</item>
+        <item>@string/units_mass_pound</item>
+        <item>@string/units_mass_ton_si</item>
+        <item>@string/units_mass_ton_us</item>
+        <item>@string/units_mass_ton_uk</item>
+    </string-array>
+    <string-array name="array_mass_scales_conditionals">
+        <item>@string/units_mass_milligram</item>
+        <item>@string/units_mass_gram</item>
+        <item>@string/units_mass_kilogram</item>
+        <item>@string/units_mass_carat</item>
+        <item>@string/units_mass_grain</item>
+        <item>@string/units_mass_ounce</item>
+        <item>@string/units_mass_ounce_troy</item>
+        <item>@string/units_mass_pound</item>
+        <item>@string/units_mass_ton_si</item>
+        <item>@string/units_mass_ton_us</item>
+        <item>@string/units_mass_ton_uk</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Pressure tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_pressure_select">- Select -</string>
+    <string name="units_pressure_atmosphere">Atmosphere (atm)</string>
+    <string name="units_pressure_pascal">Pascal (Pa)</string>
+    <string name="units_pressure_kilopascal">Kilopascal (kPa)</string>
+    <string name="units_pressure_megapascal">Megapascal (MPa)</string>
+    <string name="units_pressure_bar">Bar (bar)</string>
+    <string name="units_pressure_pound_sq_inch">Pound/Sq. Inch (psi)</string>
+    <string name="units_pressure_pound_sq_foot">Pound/Sq. Foot (psf)</string>
+    <string name="units_pressure_millimetre_mercury">Millimeter Mercury (mmHg)</string>
+    <string name="units_pressure_metre_water">Meter Water (mH₂O)</string>
+    <string name="units_pressure_torr">Torr (torr)</string>
+    <string name="units_pressure_kilogram_force_sq_centimetre">Kg-force/cm² (kgf/cm²)</string>
+    <string name="units_pressure_defaultText">-</string>
+    <string name="units_pressure_defaultText_input">Pressure</string>
+    <string-array name="array_pressure_scales">
+        <item>@string/units_pressure_select</item>
+        <item>@string/units_pressure_atmosphere</item>
+        <item>@string/units_pressure_pascal</item>
+        <item>@string/units_pressure_kilopascal</item>
+        <item>@string/units_pressure_megapascal</item>
+        <item>@string/units_pressure_bar</item>
+        <item>@string/units_pressure_pound_sq_inch</item>
+        <item>@string/units_pressure_pound_sq_foot</item>
+        <item>@string/units_pressure_millimetre_mercury</item>
+        <item>@string/units_pressure_metre_water</item>
+        <item>@string/units_pressure_torr</item>
+        <item>@string/units_pressure_kilogram_force_sq_centimetre</item>
+    </string-array>
+    <string-array name="array_pressure_scales_conditionals">
+        <item>@string/units_pressure_atmosphere</item>
+        <item>@string/units_pressure_pascal</item>
+        <item>@string/units_pressure_kilopascal</item>
+        <item>@string/units_pressure_megapascal</item>
+        <item>@string/units_pressure_bar</item>
+        <item>@string/units_pressure_pound_sq_inch</item>
+        <item>@string/units_pressure_pound_sq_foot</item>
+        <item>@string/units_pressure_millimetre_mercury</item>
+        <item>@string/units_pressure_metre_water</item>
+        <item>@string/units_pressure_torr</item>
+        <item>@string/units_pressure_kilogram_force_sq_centimetre</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Speed tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_speed_select">- Select -</string>
+    <string name="units_speed_centimetre_second">Centimeter/second (cm/s)</string>
+    <string name="units_speed_centimetre_minute">Centimeter/minute (cm/min)</string>
+    <string name="units_speed_centimetre_hour">Centimeter/hour (cm/h)</string>
+    <string name="units_speed_metre_second">Meter/second (m/s)</string>
+    <string name="units_speed_metre_minute">Meter/minute (m/min)</string>
+    <string name="units_speed_metre_hour">Meter/hour (m/h)</string>
+    <string name="units_speed_kilometre_second">Kilometer/second (km/s)</string>
+    <string name="units_speed_kilometre_minute">Kilometer/minute (km/min)</string>
+    <string name="units_speed_kilometre_hour">Kilometer/hour (km/h)</string>
+    <string name="units_speed_foot_second">Foot/second (ft/s)</string>
+    <string name="units_speed_foot_minute">Foot/minute (ft/min)</string>
+    <string name="units_speed_foot_hour">Foot/hour (ft/h)</string>
+    <string name="units_speed_mile_second">Mile/second (mi/s)</string>
+    <string name="units_speed_mile_minute">Mile/minute (mi/min)</string>
+    <string name="units_speed_mile_hour">Mile/hour (mi/h)</string>
+    <string name="units_speed_mach_SI">Mach (SI)</string>
+    <string name="units_speed_mach_1atm">Mach (20°C, 1 atm)</string>
+    <string name="units_speed_knot">Knot (kt)</string>
+    <string name="units_speed_defaultText">-</string>
+    <string name="units_speed_defaultText_input">Velocity</string>
+    <string-array name="array_speed_scales">
+        <item>@string/units_speed_select</item>
+        <item>@string/units_speed_centimetre_second</item>
+        <item>@string/units_speed_centimetre_minute</item>
+        <item>@string/units_speed_centimetre_hour</item>
+        <item>@string/units_speed_metre_second</item>
+        <item>@string/units_speed_metre_minute</item>
+        <item>@string/units_speed_metre_hour</item>
+        <item>@string/units_speed_kilometre_second</item>
+        <item>@string/units_speed_kilometre_minute</item>
+        <item>@string/units_speed_kilometre_hour</item>
+        <item>@string/units_speed_foot_second</item>
+        <item>@string/units_speed_foot_minute</item>
+        <item>@string/units_speed_foot_hour</item>
+        <item>@string/units_speed_mile_second</item>
+        <item>@string/units_speed_mile_minute</item>
+        <item>@string/units_speed_mile_hour</item>
+        <item>@string/units_speed_mach_SI</item>
+        <item>@string/units_speed_mach_1atm</item>
+        <item>@string/units_speed_knot</item>
+    </string-array>
+    <string-array name="array_speed_scales_conditionals">
+        <item>@string/units_speed_centimetre_second</item>
+        <item>@string/units_speed_centimetre_minute</item>
+        <item>@string/units_speed_centimetre_hour</item>
+        <item>@string/units_speed_metre_second</item>
+        <item>@string/units_speed_metre_minute</item>
+        <item>@string/units_speed_metre_hour</item>
+        <item>@string/units_speed_kilometre_second</item>
+        <item>@string/units_speed_kilometre_minute</item>
+        <item>@string/units_speed_kilometre_hour</item>
+        <item>@string/units_speed_foot_second</item>
+        <item>@string/units_speed_foot_minute</item>
+        <item>@string/units_speed_foot_hour</item>
+        <item>@string/units_speed_mile_second</item>
+        <item>@string/units_speed_mile_minute</item>
+        <item>@string/units_speed_mile_hour</item>
+        <item>@string/units_speed_mach_SI</item>
+        <item>@string/units_speed_mach_1atm</item>
+        <item>@string/units_speed_knot</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Temperature tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_temperature_select">- Select -</string>
+    <string name="units_temperature_celsius">Celsius (°C)</string>
+    <string name="units_temperature_fahrenheit">Fahrenheit (°F)</string>
+    <string name="units_temperature_kelvin">Kelvin (K)</string>
+    <string name="units_temperature_rankine">Rankine (°R)</string>
+    <string name="units_temperature_delisle">Delisle (°De)</string>
+    <string name="units_temperature_newton">Newton (°N)</string>
+    <string name="units_temperature_reaumur">Réaumur (°Ré)</string>
+    <string name="units_temperature_romer">Rømer (°Rø)</string>
+    <string name="units_temperature_defaultText">-</string>
+    <string name="units_temperature_defaultText_input">21.0°</string>
+    <string-array name="array_temperature_scales">
+        <item>@string/units_temperature_select</item>
+        <item>@string/units_temperature_celsius</item>
+        <item>@string/units_temperature_fahrenheit</item>
+        <item>@string/units_temperature_kelvin</item>
+        <item>@string/units_temperature_rankine</item>
+        <item>@string/units_temperature_delisle</item>
+        <item>@string/units_temperature_newton</item>
+        <item>@string/units_temperature_reaumur</item>
+        <item>@string/units_temperature_romer</item>
+    </string-array>
+    <string-array name="array_temperature_scales_conditionals">
+        <item>@string/units_temperature_celsius</item>
+        <item>@string/units_temperature_fahrenheit</item>
+        <item>@string/units_temperature_kelvin</item>
+        <item>@string/units_temperature_rankine</item>
+        <item>@string/units_temperature_delisle</item>
+        <item>@string/units_temperature_newton</item>
+        <item>@string/units_temperature_reaumur</item>
+        <item>@string/units_temperature_romer</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Time tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_time_select">- Select -</string>
+    <string name="units_time_nanosecond">Nanosecond (ns)</string>
+    <string name="units_time_millisecond">Millisecond (ms)</string>
+    <string name="units_time_second">Second (s)</string>
+    <string name="units_time_minute">Minute (min)</string>
+    <string name="units_time_hour">Hour (h)</string>
+    <string name="units_time_day">Day (day)</string>
+    <string name="units_time_week">Week (wk)</string>
+    <string name="units_time_month">Month (mo)</string>
+    <string name="units_time_year">Year (yr)</string>
+    <string name="units_time_decade">Decade (dec)</string>
+    <string name="units_time_eon">Eon (eon)</string>
+    <string name="units_time_defaultText">-</string>
+    <string name="units_time_defaultText_input">Time</string>
+    <string-array name="array_time_scales">
+        <item>@string/units_time_select</item>
+        <item>@string/units_time_nanosecond</item>
+        <item>@string/units_time_millisecond</item>
+        <item>@string/units_time_second</item>
+        <item>@string/units_time_minute</item>
+        <item>@string/units_time_hour</item>
+        <item>@string/units_time_day</item>
+        <item>@string/units_time_week</item>
+        <item>@string/units_time_month</item>
+        <item>@string/units_time_year</item>
+        <item>@string/units_time_decade</item>
+        <item>@string/units_time_eon</item>
+    </string-array>
+    <string-array name="array_time_scales_conditionals">
+        <item>@string/units_time_nanosecond</item>
+        <item>@string/units_time_millisecond</item>
+        <item>@string/units_time_second</item>
+        <item>@string/units_time_minute</item>
+        <item>@string/units_time_hour</item>
+        <item>@string/units_time_day</item>
+        <item>@string/units_time_week</item>
+        <item>@string/units_time_month</item>
+        <item>@string/units_time_year</item>
+        <item>@string/units_time_decade</item>
+        <item>@string/units_time_eon</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- strings used at the Volume tab on Units Converter menu drawer -->
+    <!-- ################################################################################################################ -->
+    <string name="units_volume_select">- Select -</string>
+    <string name="units_volume_milliliter">Milliliter (mL)</string>
+    <string name="units_volume_liter">Liter (L)</string>
+    <string name="units_volume_cubic_centimetre">Cubic Centimeter (cm³)</string>
+    <string name="units_volume_cubic_decimetre">Cubic Decimeter (dm³)</string>
+    <string name="units_volume_cubic_metre">Cubic Meter (m³)</string>
+    <string name="units_volume_ounce_us">Fluid Ounce US (fl.oz)</string>
+    <string name="units_volume_ounce_uk">Fluid Ounce UK (fl.oz)</string>
+    <string name="units_volume_gallon_us">Gallon US (gal)</string>
+    <string name="units_volume_gallon_uk">Gallon UK (gal)</string>
+    <string name="units_volume_gallon_us_dry">Dry Gallon US (dry gal)</string>
+    <string name="units_volume_cubic_inch">Cubic Inch (in³)</string>
+    <string name="units_volume_cubic_foot">Cubic Foot (ft³)</string>
+    <string name="units_volume_cubic_yard">Cubic Yard (yd³)</string>
+    <string name="units_volume_pint_us">Pint US (pt)</string>
+    <string name="units_volume_pint_uk">Pint UK (pt)</string>
+    <string name="units_volume_teaspoon">Teaspoon Metric (tsp)</string>
+    <string name="units_volume_tablespoon">Tablespoon Metric (tbs)</string>
+    <string name="units_volume_cup">Cup Metric (cup)</string>
+    <string name="units_volume_barrel_us">Barrel US (US bbl)</string>
+    <string name="units_volume_barrel_uk">Barrel UK (UK bbl)</string>
+    <string name="units_volume_barrel_oil">Barrel Oil US (Oil bbl)</string>
+    <string name="units_volume_defaultText">-</string>
+    <string name="units_volume_defaultText_input">Volume</string>
+    <string-array name="array_volume_scales">
+        <item>@string/units_volume_select</item>
+        <item>@string/units_volume_milliliter</item>
+        <item>@string/units_volume_liter</item>
+        <item>@string/units_volume_cubic_centimetre</item>
+        <item>@string/units_volume_cubic_decimetre</item>
+        <item>@string/units_volume_cubic_metre</item>
+        <item>@string/units_volume_ounce_us</item>
+        <item>@string/units_volume_ounce_uk</item>
+        <item>@string/units_volume_gallon_us</item>
+        <item>@string/units_volume_gallon_uk</item>
+        <item>@string/units_volume_gallon_us_dry</item>
+        <item>@string/units_volume_cubic_inch</item>
+        <item>@string/units_volume_cubic_foot</item>
+        <item>@string/units_volume_cubic_yard</item>
+        <item>@string/units_volume_pint_us</item>
+        <item>@string/units_volume_pint_uk</item>
+        <item>@string/units_volume_teaspoon</item>
+        <item>@string/units_volume_tablespoon</item>
+        <item>@string/units_volume_cup</item>
+        <item>@string/units_volume_barrel_us</item>
+        <item>@string/units_volume_barrel_uk</item>
+        <item>@string/units_volume_barrel_oil</item>
+    </string-array>
+    <string-array name="array_volume_scales_conditionals">
+        <item>@string/units_volume_milliliter</item>
+        <item>@string/units_volume_liter</item>
+        <item>@string/units_volume_cubic_centimetre</item>
+        <item>@string/units_volume_cubic_decimetre</item>
+        <item>@string/units_volume_cubic_metre</item>
+        <item>@string/units_volume_ounce_us</item>
+        <item>@string/units_volume_ounce_uk</item>
+        <item>@string/units_volume_gallon_us</item>
+        <item>@string/units_volume_gallon_uk</item>
+        <item>@string/units_volume_gallon_us_dry</item>
+        <item>@string/units_volume_cubic_inch</item>
+        <item>@string/units_volume_cubic_foot</item>
+        <item>@string/units_volume_cubic_yard</item>
+        <item>@string/units_volume_pint_us</item>
+        <item>@string/units_volume_pint_uk</item>
+        <item>@string/units_volume_teaspoon</item>
+        <item>@string/units_volume_tablespoon</item>
+        <item>@string/units_volume_cup</item>
+        <item>@string/units_volume_barrel_us</item>
+        <item>@string/units_volume_barrel_uk</item>
+        <item>@string/units_volume_barrel_oil</item>
+    </string-array>
+
+    <!-- ################################################################################################################ -->
+    <!-- STRINGS USED AT THE SETTINGS MENU -->
+    <!-- ################################################################################################################ -->
+    <!-- Formatting Preferences -->
+    <string name="settings_header">Settings</string>
+    <string name="settings_formatting_preference">Formatting</string>
+    <!-- Formatting Preferences - Number of Decimals -->
+    <string name="settings_number_decimals_defaultValue">4</string>
+    <string name="settings_number_decimals_dialog">Number of Decimals</string>
+    <string name="settings_number_decimals_title">Number of Decimal Places</string>
+    <string name="settings_number_decimals_summary">Set the number of decimal places to be shown in the converted values</string>
+    <string name="settings_number_decimals_preference_key">list</string>
+    <!-- Formatting Preferences - Decimal Separator -->
+    <string name="settings_decimal_separator_defaultValue">.</string>
+    <string name="settings_decimal_separator_dialog">Decimal Separator</string>
+    <string name="settings_decimal_separator_title">Decimal Separator</string>
+    <string name="settings_decimal_separator_summary">Set the decimal separator character to be shown in the converted values</string>
+    <string name="settings_decimal_separator_preference_key">list</string>
+
+    <!-- Visual Preferences -->
+    <string name="settings_visual_preference">Visual</string>
+    <!-- Formatting Preferences - Theme -->
+    <string name="settings_visual_defaultValue">false</string>
+    <string name="settings_visual_title">Use Dark Theme</string>
+    <string name="settings_visual_summary">Select whether or not to use the dark theme</string>
+    <string name="settings_visual_preference_key">checkbox</string>
+
+</resources>

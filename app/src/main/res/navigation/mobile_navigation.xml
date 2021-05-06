@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_calculator">
+
+    <fragment
+        android:id="@+id/nav_menu_start"
+        android:name="com.lars.calculatorunitconverter.MenuStartOptionsFragment"
+        android:label="@string/menu_start"
+        tools:layout="@layout/fragment_start_menu" />
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.lars.calculatorunitconverter.ui.calculator.CalculatorFragment"
+        android:label="@string/menu_calculator"
+        tools:layout="@layout/fragment_calculator" />
+
+    <fragment
+        android:id="@+id/nav_currency"
+        android:name="com.lars.calculatorunitconverter.ui.currency.CurrencyFragment"
+        android:label="@string/menu_currency"
+        tools:layout="@layout/fragment_currency" />
+
+    <fragment
+        android:id="@+id/nav_dilution"
+        android:name="com.lars.calculatorunitconverter.ui.dilution.DilutionCalculatorFragment"
+        android:label="@string/menu_dilution"
+        tools:layout="@layout/fragment_dilution" />
+
+    <fragment
+        android:id="@+id/nav_units"
+        android:name="com.lars.calculatorunitconverter.ui.units.UnitConversionFragment"
+        android:label="@string/menu_units"
+        tools:layout="@layout/fragment_units" />
+
+</navigation>
